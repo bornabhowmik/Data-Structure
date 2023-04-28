@@ -1,32 +1,32 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int n, i;
-    scanf("%d", &n);
+    int n,count=0;
+    scanf("%d",&n);
 
-    int arr[n];
-    for(i=0; i<n; i++)
+    int ar[n];
+
+    for(int i=0; i<n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d",&ar[i]);
+    }
+    // linear search
+    int x;
+    scanf("%d",&x);
+
+    for(int i=0;i<n;i++)
+    {
+        if(ar[i]==x)count++;
     }
 
-    int x;
-    scanf("%d", &x);
-
-    for(i=0; i<n; i++)
-    {
-        if(arr[i]==x)
+    if(count>0)
         {
-            printf("Number Matched\n");
-            break;
+          printf("Data found\n");
         }
         else
         {
-            printf("Number Not Found\n");
+            printf("Data not found\n");
         }
-        
-    }
     
-
+    return 0;
 }
