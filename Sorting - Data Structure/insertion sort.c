@@ -2,7 +2,7 @@
 int main()
 {
     int ar[]={4,8,2,9,6};
-    int i, value, hole;
+    int i, value, hole;   
     for(i=1; i<5; i++)
     {
         value=ar[i];
