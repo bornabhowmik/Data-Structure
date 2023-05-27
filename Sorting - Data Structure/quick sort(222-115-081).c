@@ -25,8 +25,10 @@ void quicksort(int a[], int low, int high)
     {
         int pivot = a[high];
         int t = low-1;
-        for(int i=low; i<high; i++){
-            if(a[i] < pivot){
+        for(int i=low; i<high; i++)
+        {
+            if(a[i] < pivot)
+            {
                 t++;
                 swap(&a[i], &a[t]);
             }
@@ -38,11 +40,9 @@ void quicksort(int a[], int low, int high)
     }
 }
 
-
 void swap(int *a, int *b)
 {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-
