@@ -1,6 +1,7 @@
 #include<stdio.h>
 
-int binarySearch(int A[], int n, int data) {
+int binarySearch(int A[], int n, int data) 
+{
     int beg, mid, end;
     beg = 0;
     end = n - 1; 
@@ -22,7 +23,8 @@ int binarySearch(int A[], int n, int data) {
     return -1;
 }
 
-int main() {
+int main() 
+{
     int A[] = {1, 2, 3, 4, 5};
     int n = sizeof(A) / sizeof(A[0]);
     int data = 3;
