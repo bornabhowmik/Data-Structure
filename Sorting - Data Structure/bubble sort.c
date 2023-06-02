@@ -3,7 +3,7 @@ int main()
 {
     int ar[]={8,5,3,9,6};
     int i, j, size=5;
-    for(i=0; i<size-1; i++ )
+    for(i=0; i<size-1; i++)
     {
         for(j=0; j<size-1-i; j++)
         {
