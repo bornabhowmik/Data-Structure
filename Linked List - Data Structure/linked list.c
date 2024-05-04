@@ -5,7 +5,8 @@ struct node
     int value;
     struct node *next;
 };
-void printLinkedList(struct node *x){
+void printLinkedList(struct node *x)
+{
     while(x!=NULL)
     {
         printf("%d ", x->value);
@@ -13,7 +14,6 @@ void printLinkedList(struct node *x){
     }
     
 }
-
 
 int main()
 {
